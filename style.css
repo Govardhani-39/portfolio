@@ -1,0 +1,269 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #00c853, #d500f9); /* Improved gradient */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Navigation Bar */
+nav {
+    background: linear-gradient(to right, #d500f9, #00c853);
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    text-align: center;
+    background: white;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Profile Picture */
+img.profile {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 5px solid #0077b6;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+img.profile:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background:linear-gradient(to right, #00c853, #d500f9);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        width: 150%;
+    }
+    
+    img.profile {
+        width: 50px;
+        height: 50px;
+    }
+}
+/* Experience Box */
+.experience-box {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #d500f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.experience-box h3 {
+    color: #00c853;
+}
+
+/* Certifications */
+.certifications {
+    list-style: none;
+    padding: 0;
+}
+
+.certifications li {
+    background: #fff;
+    padding: 12px;
+    margin: 10px 0;
+    border-left: 5px solid #00c853;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+/* Projects Section */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background: #fff;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    color: #d500f9;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #00c853;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #007a33;
+}
+/* Contact Page Styles */
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+form {
+    width: 45%;
+    min-width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: none;
+}
+
+.contact-info {
+    width: 40%;
+    min-width: 250px;
+    text-align: left;
+}
+
+.contact-info h3 {
+    color: #d500f9;
+}
+
+.contact-info a {
+    color: #00c853;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-photo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #00c853;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #007a33;
+}
+
+
